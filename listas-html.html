@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <title>Cool Kitty Page</title>
+
+<!-- font importing -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+  <style>
+    .purple-text
+    {
+      color:purple;
+    } 
+    p {
+      font-size: 16px;
+    } 
+    h2 {
+      font-family: Lobster, monospace;
+    } 
+    .smaller-image{
+      width: 100px;
+    }
+    .dotted-aqua-border{
+      border-color: aqua;
+      border-width: 5px;
+      border-style: dotted;
+    }
+    .round-image{
+      border-radius: 100px;
+    }
+    .springgreen-background{
+      background-color: springgreen;
+    }
+    #only-h1{
+      background-color: steelblue;
+    }
+    [type="checkbox"]{
+      margin:10px 0px 15px 0px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id= "only-h1"class="purple-text">Cats are really cool don't ya think?</h1>
+    <h2 style="color:rgb(19, 155, 155);">CatPhotoApp</h2>
+    <main>
+      <p>Click here to view more <a href="#">cat photos</a>.</p>
+    
+      <a href="#"><img class="smaller-image dotted-aqua-border round-image" src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+    
+      <p>Things cats love:</p>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <p>Top 3 things cats hate:</p>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <form id="cat-photo-form" class="springgreen-background" action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
+        <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+        <label for="loving"><input id="loving" value ="loving" type="checkbox" name="personality" checked> Loving</label>
+        <label for="lazy"><input id="lazy" value = "lazy" type="checkbox" name="personality"> Lazy</label>
+        <label for="energetic"><input id="energetic" value = "energetic" type="checkbox" name="personality"> Energetic</label><br>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <!-- Self Notes:
+
+      padding: 10px 20px 10px 20px;
+      Clockwise notation: top, right, bottom, left. Works for margins as well.
+      Absolute vs relative: em, mm, rem, in. 
+    -->
+<!-- website based on free code camp free course of web responsivity-->
+</body>
+</html>
