@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <head>
-    <title>Aula sobre listas e forms</title>
+  <title>Cool Kitty Page</title>
 
-<!-- importando fonte -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> -->
+<!-- font importing -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <style>
     .purple-text
     {
@@ -41,38 +40,42 @@
   </style>
 </head>
 <body>
-  <h1 id= "only-h1"class="purple-text">Aula sobre listas e forms</h1>
+  <h1 id= "only-h1"class="purple-text">Cats are really cool don't ya think?</h1>
     <h2 style="color:rgb(19, 155, 155);">CatPhotoApp</h2>
     <main>
       <p>Click here to view more <a href="#">cat photos</a>.</p>
     
       <a href="#"><img class="smaller-image dotted-aqua-border round-image" src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
     
-      <p>Coisas que gatos amam:</p>
-      <!-- Listas não ordenadas -->
+      <p>Things cats love:</p>
       <ul>
         <li>cat nip</li>
         <li>laser pointers</li>
         <li>lasagna</li>
       </ul>
       <p>Top 3 things cats hate:</p>
-      <!-- Listas ordenadas -->
       <ol>
         <li>flea treatment</li>
-        <li>trovão</li>
+        <li>thunder</li>
         <li>other cats</li>
       </ol>
-      
-      <form id="cat-photo-form" class="springgreen-background" action="https://github.com/diego-salves/aulas-ao-vivo-mentorama">
-        <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Caseiro</label>
-        <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Fora de casa</label><br>
-        <label for="loving"><input id="loving" value ="loving" type="checkbox" name="personality" checked> Amoroso</label>
-        <label for="lazy"><input id="lazy" value = "lazy" type="checkbox" name="personality">Preguiçoso</label>
-        <label for="energetic"><input id="energetic" value = "energetic" type="checkbox" name="personality"> Enérgico</label><br>
-        <label for ="birthday"><input id="birthday" type="date"> -> Data de aniversário</label><br><br>
-        <input type="text" placeholder="dúvidas?" required>
-        <button type="submit">Enviar!</button>
+      <form id="cat-photo-form" class="springgreen-background" action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
+        <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+        <label for="loving"><input id="loving" value ="loving" type="checkbox" name="personality" checked> Loving</label>
+        <label for="lazy"><input id="lazy" value = "lazy" type="checkbox" name="personality"> Lazy</label>
+        <label for="energetic"><input id="energetic" value = "energetic" type="checkbox" name="personality"> Energetic</label><br>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
       </form>
     </main>
+
+    <!-- Self Notes:
+
+      padding: 10px 20px 10px 20px;
+      Clockwise notation: top, right, bottom, left. Works for margins as well.
+      Absolute vs relative: em, mm, rem, in. 
+    -->
+<!-- website based on free code camp free course of web responsivity-->
 </body>
 </html>
