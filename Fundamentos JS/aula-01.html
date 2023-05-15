@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aula 01</title>
+</head>
+<body>
+    <h1>variáveis e tipos de dados</h1>
+
+    <script>
+        var nome1 = "Diego";
+        var nome2 = "Santos";
+        
+        nome1 = "Damião";
+        console.log("nome completo: " + nome1 + " " + nome2);
+
+        //Principais tipos de dado
+        var nome = 'Curtis "50 Cent" Jackson'; //string
+        var idade = 42; //int
+        var altura = 1.81; //float
+        var boolean = true; //booleano true/false 
+        var alunos = ["Davi", "Damião", 23, 25, false, 1.85]; //vetor (array)
+        
+        //console.log(nome[11])
+        var aluno = {
+            nome: 'Damião',
+            idade: 25,
+            peso: 60.6,
+            ativo: true,
+            hobbies: ['jogar', 'comer pizza'],
+       }; //objeto
+
+       var aluno2 = {
+        nome: 'Davi',
+        idade: 27,
+        peso: 60.6,
+        ativo: true,
+        hobbies: ['jogar', 'comer pizza'],
+   }; //objeto
+
+        console.log("O aluno " + aluno.nome + " gosta de: " + aluno.hobbies)
+        console.log("Temos os alunos hoje: " + aluno2.nome + ", " + aluno.nome + ", " + nome)
+    </script>
+
+</body>
+</html>
