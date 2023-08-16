@@ -75,3 +75,11 @@ console.log(nomes)
 nomes.splice(3, 1, 'Carlos', 'Eva');
 
 console.log(nomes)
+
+/* Atividade
+a partir do array 
+var dados = [3, 1, 'Carlos', 'Eva', 'João', [1,2,3,4], 6, true]
+verifique se o dado é uma string, se for não faça nada, se não for substitua o dado 
+usando o splice para a string 'default', use um loop for ou while
+
+*/
